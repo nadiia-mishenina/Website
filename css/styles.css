@@ -586,3 +586,150 @@ img {
   text-decoration: none;
   margin: 0 10px;
 }
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header-navigation-list {
+    gap: 20px;
+  }
+
+  .benefits-list {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio-list {
+    justify-content: center;
+  }
+}
+
+/* Адаптив для мобільних (до 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .address-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-banner {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+
+  .hero-banner-title {
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .benefits-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .team-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo-paragraf,
+  .footer-logo-text-wrapper {
+    margin-right: 0;
+  }
+}
+
+/* Дуже маленькі екрани (до 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-banner-title {
+    font-size: 28px;
+  }
+
+  .team-title,
+  .portfolio-title,
+  .benefits-title {
+    font-size: 24px;
+  }
+
+  .address-list {
+    font-size: 14px;
+  }
+
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+/* Для фонового фото у hero */
+.hero-banner {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Для планшетів */
+@media screen and (max-width: 991px) {
+  .team-list-iteam-image,
+  .portfolio-list-iteam img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Для мобільних */
+@media screen and (max-width: 768px) {
+  .hero-banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url("../images/buner_1-mobile.jpg"); /* 👈 мобільна версія фото */
+  }
+
+  .team-list-iteam-image,
+  .portfolio-list-iteam img {
+    border-radius: 8px;
+  }
+}
+
+/* Дуже маленькі екрани */
+@media screen and (max-width: 480px) {
+  .hero-banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("../images/buner_1-small.jpg"); /* 👈 ще менша версія фото */
+  }
+}
