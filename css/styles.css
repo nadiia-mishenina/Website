@@ -765,3 +765,57 @@ img {
     width: 100%; /* блок на всю ширину */
   }
 }
+@media screen and (max-width: 768px) {
+  .benefits-list {
+    flex-direction: column; /* блоки один під одним */
+    gap: 16px;
+  }
+
+  .benefits-list-iteam {
+    flex: 1 1 100%; /* займати всю ширину */
+    width: 100%;
+  }
+
+  .benefits-list-iteam img {
+    max-width: 100%; /* картинки теж на всю ширину блоку */
+  }
+}
+/* Портфоліо - десктоп */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px; /* відстань між картками */
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-list-iteam {
+  flex: 1 1 calc((100% - 48px) / 3); /* 3 в ряд на десктопі */
+  list-style: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.portfolio-list-iteam img {
+  width: 100%; /* картинка на ширину блоку */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Мобільна версія */
+@media screen and (max-width: 768px) {
+  .portfolio-list {
+    flex-direction: column; /* картки один під одним */
+    gap: 16px;
+  }
+
+  .portfolio-list-iteam {
+    flex: 1 1 100%; /* займати всю ширину */
+    width: 100%;
+  }
+
+  .portfolio-list-iteam img {
+    max-width: 100%; /* картинки теж на всю ширину блоку */
+  }
+}
