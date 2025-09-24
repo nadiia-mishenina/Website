@@ -733,3 +733,35 @@ img {
     background-image: url("../images/buner_1-small.jpg"); /* 👈 ще менша версія фото */
   }
 }
+@media screen and (min-width: 992px) {
+  .photo-list img {
+    width: calc((100% - 32px) / 3); /* 3 фото в ряд */
+  }
+}
+
+/* На планшеті – 2 у ряд */
+@media screen and (max-width: 991px) {
+  img {
+    width: calc((100% - 16px) / 2);
+  }
+}
+
+/* На мобільному – по одному */
+@media screen and (max-width: 768px) {
+  img {
+    flex-direction: column; /* щоб пішли зверху вниз */
+  }
+  img {
+    width: 100%; /* розтягнути на всю ширину */
+  }
+}
+@media (max-width: 768px) {
+  .benefits {
+    flex-direction: column; /* замість рядка – колонки */
+  }
+
+  .benefits > div {
+    flex: 1 1 100%;
+    width: 100%; /* блок на всю ширину */
+  }
+}
